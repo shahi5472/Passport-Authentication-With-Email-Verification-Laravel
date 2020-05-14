@@ -41,9 +41,9 @@ class PasswordResetSuccess extends Notification
     public function toMail($notifiable)
     {
         return (new MailMessage)
-                    ->line('The introduction to the notification.')
-                    ->action('Notification Action', url('/'))
-                    ->line('Thank you for using our application!');
+            ->line('You are changed your password successful.')
+            ->line('If you did change password, no further action is required.')
+            ->line('If you did not change password, protect your account.');
     }
 
     /**
